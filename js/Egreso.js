@@ -6,7 +6,7 @@ class Egreso extends Dato{
     }
 
     get id(){
-        return this._id
+        return this._id;
     }
 
 }

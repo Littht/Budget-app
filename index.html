@@ -11,26 +11,27 @@
     <div class="cabecero">
         <div class="dinero-container">
             <h1>Saldo</h1>
-            <div>Ingreso
+            <div class="container-calculos ingreso">Ingreso
                 <div id="totalIngresos"></div>
             </div>
-            <div>Egreso
+            <div class="container-calculos egreso">Egreso
                 <div id="totalEgresos"></div>
             </div>
-            <div>Total
+            <div class="container-calculos">Total
                 <div id="saldoTotal"></div>
             </div>
         </div>
     </div>
-    <form action="" onsubmit="return false">
-       <select name="" id="">
+    <form id="form" onsubmit="return false">
+       <select name="" id="tipo">
            <option value="ingreso">Ingreso</option>
            <option value="egreso">Egreso</option>
        </select> 
-       <input type="text" placeholder="Agregar descripcion">
-       <input type="number" placeholder="Agregar monto">
-       <button class="btn-agg">Agregar</button>
+       <input type="text" placeholder="Agregar descripcion" id="descripcion">
+       <input type="number" placeholder="Agregar monto" id="valor">
+       <button class="btn-agg" onclick="aggDato()">Agregar</button>
     </form>
+
     <div class="container-ingreso-egreso" >
         <div class="ingreso-container container">
             <h2>Ingresos</h2>
@@ -38,7 +39,7 @@
         </div>
         <div class="egreso-container container">
             <h2>Egresos</h2>
-            <div></div>
+            <div id="listaEgresos"></div>
         </div>
     </div>
     

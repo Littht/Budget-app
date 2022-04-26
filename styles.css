@@ -11,6 +11,12 @@ body{
     min-height: 100vh;
 }
 
+h1{
+    margin-bottom: .5em;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
 .cabecero{
     width: 100%;
     height: 35vh;
@@ -32,6 +38,25 @@ body{
     flex-direction: column;
 }
 
+.container-calculos{
+    background-color: rgb(255, 178, 91);
+    display: flex;
+    margin-bottom: .8em;
+    width: 20em;
+    height: 2.5em;
+    justify-content:space-between;
+    align-items: center;
+    padding: 1em;
+    border-radius: 4px;
+}
+
+.ingreso{
+    background-color: rgb(65, 206, 224);
+}
+
+.egreso{
+    background-color: rgb(231, 87, 87);
+}
 form{
     display: flex;
     justify-content: center;
@@ -59,7 +84,10 @@ select{
     flex: 1;
     border: rgb(61, 61, 61) 1px solid;
     display: flex;
-    justify-content: center;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+
 }
 
 .btn-agg{
@@ -67,7 +95,7 @@ select{
 }
 
 h2{
-    margin-top: 1em;
+    margin:1em 0;
     padding: .4em;
     width: 6em;
     height: 2em;
@@ -78,4 +106,31 @@ h2{
 
 input{
     padding: 1em;
+}
+
+.list-container{
+    display: flex;
+    width: 40em;
+    height: 2em;
+    padding: 1.2em;
+    background-color: rgb(255, 178, 91);
+    border-radius: 4px;
+    margin-bottom: .5em;
+    align-items: center;
+    border: 2px rgb(77, 76, 76) solid;
+    position: relative;
+}
+
+.derecha{
+    position: absolute;
+    right: 17%;
+}
+
+.derecha-btn{
+    position: absolute;
+    right:2%;
+}
+
+button{
+    padding: .2em .5em;
 }
