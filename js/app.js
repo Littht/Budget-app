@@ -59,8 +59,10 @@ const crearIngresos=(ingreso)=>{
     let ingresoHTML=`
     <div class="list-container">
     <div>${ingreso.descripcion}</div>
-    <div class="derecha">${ingreso.valor}$</div>
-    <button class="derecha-btn" onclick="eliminarIngreso(${ingreso.id})">Eliminar</button>
+    <div>
+        <div>${ingreso.valor}$</div>
+        <button onclick="eliminarIngreso(${ingreso.id})">Eliminar</button>
+    </div>
     </div>
     `
     return ingresoHTML;
@@ -78,8 +80,8 @@ const crearEgreso=(egreso)=>{
     let egresoHTML=`
     <div class="list-container">
     <div>${egreso.descripcion}</div>
-    <div class="derecha">${egreso.valor}$</div>
-    <button class="derecha-btn" onclick="eliminarEgreso(${egreso.id})">Eliminar</button>
+    <div>${egreso.valor}$</div>
+    <button onclick="eliminarEgreso(${egreso.id})">Eliminar</button>
     </div>
     `
     return egresoHTML;
