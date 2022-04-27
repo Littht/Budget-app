@@ -150,4 +150,5 @@ button{
 
 #listaIngresos, #listaEgresos {
     padding: 12px;
+    width: 100%;
 }
