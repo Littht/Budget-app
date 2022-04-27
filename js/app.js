@@ -89,22 +89,26 @@ const crearEgreso=(egreso)=>{
 
 
 const eliminarIngreso=(id)=>{
-    for(let ingreso of ingresos){
+    // for(let ingreso of ingresos){
+        /**
+         * Basicamente el error es que estabas buscando el indice por cada elemento del arreglo cuando debias buscarlo solo una vez.
+         * Lo mismo sucedía en el eliminarEgreso
+         */
         let eliminar= ingresos.findIndex(ingreso => ingreso.id===id);
         ingresos.splice(eliminar,1);
         cargarCabecero();
         cargarIngresos();
         
-    }
+    // }
 }
 
 const eliminarEgreso=(id)=>{
-    for(let egreso of egresos){
+    // for(let egreso of egresos){
         let eliminar= egresos.findIndex(egreso => egreso.id===id);
         ingresos.splice(eliminar,1);
         cargarCabecero();
         cargarEgresos();
-    }
+    // }
 }
 
 
